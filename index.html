@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>WordGuess</title>
+<script type="text/javascript" src="script.js">
+</script>
+
+</head>
+<body bgcolor=#f8bd1e>
+<div class="mainheading" >
+<center><h1>Hangman Game</h1></center>
+</div>
+
+<div class="scorecard">
+<b>ScoreBoard</b></br>
+<form name="scoreform" action="">
+Won:<input name="wonnum" value="0" class="wonclass displayWord" disabled></br>
+Lost:<input name="lostnum" value="0" class="loseclass displayWord" disabled></br>
+</form>
+</div>
+
+<div class="slideshow">
+<img src="images/0.png" width="300" align="right" name="slideshow">
+</img>
+</div>
+
+
+<form name="myForm">
+<input type="button" value="New Puzzle" onclick="selectWord()">
+<input type="hidden" name="answer" value="" ><br/><br/>
+The Meaning is:<p id="Txt" ></p>
+The Word is:<input type="text" name="displayWord" size="10" class="displayWord" disabled>
+
+
+<div class="keyboard">
+<a class="keyclass" href="javascript:selectLetter('A')">A</a>
+<a class="keyclass" href="javascript:selectLetter('B')">B</a>
+<a class="keyclass" href="javascript:selectLetter('C')">C</a>
+<a class="keyclass" href="javascript:selectLetter('D')">D</a>
+<a class="keyclass" href="javascript:selectLetter('E')">E</a>
+<a class="keyclass" href="javascript:selectLetter('F')">F</a>
+<a class="keyclass" href="javascript:selectLetter('G')">G</a>
+<a class="keyclass" href="javascript:selectLetter('H')">H</a>
+<a class="keyclass" href="javascript:selectLetter('I')">I</a>
+<a class="keyclass" href="javascript:selectLetter('J')">J</a>
+<a class="keyclass" href="javascript:selectLetter('K')">K</a>
+<a class="keyclass" href="javascript:selectLetter('L')">L</a>
+<a class="keyclass" href="javascript:selectLetter('M')">M</a>
+<a class="keyclass" href="javascript:selectLetter('N')">N</a>
+<a class="keyclass" href="javascript:selectLetter('O')">O</a>
+<a class="keyclass" href="javascript:selectLetter('P')">P</a>
+<a class="keyclass" href="javascript:selectLetter('Q')">Q</a>
+<a class="keyclass" href="javascript:selectLetter('R')">R</a>
+<a class="keyclass" href="javascript:selectLetter('S')">S</a>
+<a class="keyclass" href="javascript:selectLetter('T')">T</a>
+<a class="keyclass" href="javascript:selectLetter('U')">U</a>
+<a class="keyclass" href="javascript:selectLetter('V')">V</a>
+<a class="keyclass" href="javascript:selectLetter('W')">W</a>
+<a class="keyclass" href="javascript:selectLetter('X')">X</a>
+<a class="keyclass" href="javascript:selectLetter('Y')">Y</a>
+<a class="keyclass" href="javascript:selectLetter('Z')">Z</a>
+</div>
+
+<div class="WrongLetters">
+WORNG LETTERS:<input type="text" name="WrongLetters" class="displayWord WrongLetters" disabled>
+</div>
+
+<div class="chancesleft">
+Chances Left:<input class="counterclass displayWord" name="counter" id="wcounter" value="6" disabled>
+</div>
+
+<h1>
+Game Rules
+</h1>
+* Click New Puzzle to start the game. <br/>
+* We have to Guess the correct word to the given meanng.  <br/>
+* Every game has 6 chances.<br/>
+* The wrong Letters will be displayed on WRONG LETTERS.<br/>
+
+</form>
+
+
+</body>
+</html>
